@@ -3,12 +3,17 @@ int main(){
 	float n;
 	printf("nhap diem cua ban: ");
 	scanf("%f",&n);
-	if(n >= 8.0){
+	
+	if ('dtb<0 || dtb>10'){
+		printf("diem cua ban ko hop le");
+	}else if(n >= 8.0){
 		printf("ban la Hoc sinh gioi");
-	}else if(n >=5.0){
+	}else if(n >=6.5){
 		printf("ban la Hoc sinh kha");
-	}else{
-		printf("ban la Hoc sinh yeu");
+	}else if(n >=5.5){
+		printf("ban la Hoc sinh trung binh");
+	}else {
+		printf("ba la Hoc sinh yeu");
 	}
 	return 0;
 }
