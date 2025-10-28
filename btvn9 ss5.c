@@ -1,24 +1,25 @@
 #include <stdio.h>
 int main(){
-	float hesoluong; // salaryRate
-	int songaycong; // totalWorkDays
-	int chucvu; // position
+	float a; 
+	int b; 
+	int c; 
 	
 	printf("Nhap vao he so luong: ");
-	scanf("%f",&hesoluong);
+	scanf("%f",&a);
 	printf("Nhap vao so ngay cong: ");
-	scanf("%d",&songaycong);
+	scanf("%d",&b);
 	printf("Nhap vao chuc vu (1-2-3): ");
-	scanf("%d",&chucvu);
+	scanf("%d",&c);
 	
-	if(songaycong<0 || songaycong>31 || chucvu<1 || chucvu>3 || hesoluong<0){
+	if(b<0 || b>31 || c<1 || c>3 || a<0){
 		printf("Ban nhap khong dung du lieu");
 	}else{
-		double luong; //salary
+		double luong; 
 		double phucap;
 		double thuong = 0;
+		fflush(stdin);
 		
-		switch(chucvu){
+		switch(c){
 			case 1:
 				phucap = 500000;
 				break;
@@ -30,9 +31,10 @@ int main(){
 				break;
 		}
 		
-		thuong = (songaycong-26)*200000;
 		
-		luong = songaycong*160000*hesoluong + phucap + thuong;
+		thuong = (b-26)*200000;
+		
+		luong = b*160000*a + c + thuong;
 		printf("Luong cua ban la: %.0lf",luong);
 	}
 }
