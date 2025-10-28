@@ -7,7 +7,7 @@ int main(){
 		printf("ban la Hoc sinh gioi");
 	}else if(n >=5.0){
 		printf("ban la Hoc sinh kha");
-	}else if(n){
+	}else{
 		printf("ban la Hoc sinh yeu");
 	}
 	return 0;
