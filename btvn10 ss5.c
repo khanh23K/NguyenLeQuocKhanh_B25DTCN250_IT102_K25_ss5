@@ -37,7 +37,6 @@ int main() {
 
     tongtien = tienbacthang + phuphi;
 
-    printf("\n===== HOA DON TIEN DIEN =====\n");
     printf("So dien tieu thu: %.2f kWh\n", kwh);
     printf("Tien bac thang: %.0f VND\n", tienbacthang);
     printf("Phu phi: %.0f VND\n", phuphi);
